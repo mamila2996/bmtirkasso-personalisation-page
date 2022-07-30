@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.img-container img{
+    width: 100%;
+    object-fit: contain;
+}
+.name-container{
+    font-size: larger;
+    text-align: center;
+    padding: 7px;
+}
+.price-container{
+    font-size: large;
+    color: #0D6EFD;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.btn-container{
+    width: 100%;
+    text-align: center;
+}
+
+.btn-container a{
+font-size: small;
+width: 140px;
+padding: 7px;
+margin: 7px;
+}
+
+/* footer section */
+
+.contact{
+    height: 300px;
+}

@@ -158,9 +158,12 @@ height: 50px;
   .main-section {
     display: block;
   }
+  .preview-section {
+    height: 70vh;
+  }
   .main-section .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     width: 100%;
     margin: 0;

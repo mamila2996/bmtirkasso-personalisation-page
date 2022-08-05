@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personalisation</title>
+    <link rel="icon" href="logo/title icon.png" type="image/icon type" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -13,22 +14,23 @@
     <link rel="stylesheet" href="personalisation.css" />
   </head>
   <body>
-<!-- header -->
-<div class="header d-none d-lg-block">
-    <h2>Make it yours</h2>
-</div>
+    <!-- header -->
+    <div class="header">
+      <h2>Make it yours</h2>
+    </div>
     <!--  -->
     <section>
       <div class="container-fluid">
         <div class="row g-0" id="flex">
-          <div class="col-12 col-lg-3" id="a">
-            <!-- main section -->
+          <div class="col-12 col-lg-3 original" id="a">
+            <!-- main section --> 
             <div class="main-section">
               <div class="wrapper">
                 <!-- image and logo -->
                 <div class="image-and-logo">
                   <div class="font-icon">
                     <i class="bi bi-image"></i>
+                    <i class="bi bi-check2-square"></i>
                   </div>
                   <div class="text"><span>LOGO OR YOUR IMAGE</span></div>
                 </div>
@@ -46,11 +48,26 @@
                   </div>
                   <div class="text"><span>COLOURS.</span></div>
                 </div>
-                
-                
               </div>
             </div>
           </div>
+
+          <div class="col-12 col-lg-3 bg-dark text-light after-click" id="aa">
+            <!-- main section -->
+            <div class="image-input-and-buttons">
+              <div class="image-input-and-label">
+                <input type="file" name="logo-image" id="logo-image" class="image-input">
+                <label for="logo-image" class="input-label">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                  <span>CHOOSE FILE</span></label>
+              </div>
+            <div class="confirm-cancel-buttons">
+              <button class="confirm-editing">CONFIRM</button>
+              <button class="cancel-editing">CANCEL</button>    
+            </div>
+          </div>
+          </div>
+
           <div class="col-12 col-lg-9" id="b">
             <!-- preview section -->
             <div class="preview-section">
@@ -62,9 +79,38 @@
     </section>
     <!-- close button -->
     <div class="close-btn">
-        <a href="index.html"><i class="bi bi-x-lg"></i></a>
-      </div>
-
+      <a href="index.html"><i class="bi bi-x-lg"></i></a>
+    </div>
     <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      const imageAndLogo = document.querySelector(".image-and-logo");
+      const originalDiv = document.querySelector(".original");
+      const afterClickDiv = document.querySelector(".after-click");
+      const cancelEditing = document.querySelector(".cancel-editing");
+      const confirmEditing = document.querySelector(".confirm-editing");
+      const imageIcon = document.querySelector(".bi-image");
+      const okIcon = document.querySelector(".bi-check2-square");
+      const headerDiv = document.querySelector(".header");
+      // afterClickDiv.style.display ="block"
+      // originalDiv.style.display ="none"
+      imageAndLogo.addEventListener("click", function(){
+      afterClickDiv.style.display ="block";
+      originalDiv.style.display ="none";
+      headerDiv.style.display="none";
+      });
+      cancelEditing.onclick =()=>{
+      afterClickDiv.style.display ="none";
+      originalDiv.style.display ="block";
+      }
+      confirmEditing.onclick =()=>{
+      afterClickDiv.style.display ="none";
+      originalDiv.style.display ="block";
+      imageAndLogo.style.backgroundColor ="#FF0A7C";
+      imageIcon.style.display="none";
+      okIcon.style.display="block";
+      }
+
+    </script>
+
   </body>
 </html>

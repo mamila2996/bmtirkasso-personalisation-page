@@ -3,6 +3,7 @@ const textAndStyle = document.querySelector(".text-and-style");
 const afterClickTextStyle = document.querySelector(".after-click-text-style");
 const colors = document.querySelector(".colors");
 const originalDiv = document.querySelector(".original");
+const previewDiv = document.querySelector(".preview-section");
 const afterClickDiv = document.querySelector(".after-click");
 const cancelEditing = document.querySelector(".cancel-editing");
 const confirmEditing = document.querySelector(".confirm-editing");
@@ -26,16 +27,19 @@ const fontIconContainerColor = document.getElementById("fi-3");
 // media checker
 var x=window.matchMedia("(max-width:992px)");
 
+
 // ********************************
 imageAndLogo.addEventListener("click", () => {
   afterClickDiv.style.display = "block";
   originalDiv.style.display = "none";
   headerDiv.style.display = "none";
+  previewDiv.style.height ="75vh";
 });
 textAndStyle.addEventListener("click", () => {
   afterClickTextStyle.style.display = "block";
   originalDiv.style.display = "none";
   headerDiv.style.display = "none";
+  previewDiv.style.height ="65vh";
 });
 colors.addEventListener("click", () => {
   alert("this also checked");
@@ -52,10 +56,12 @@ confirmEditing.onclick = () => {
   // match media
   if(x.matches){
     imageAndLogo.style.backgroundColor = "none";
+   
   }
   else{
     imageAndLogo.style.backgroundColor = "#FF0A7C";
     imageAndLogo.style.color = "white";
+    
   }
   
 

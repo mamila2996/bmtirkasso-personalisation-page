@@ -373,7 +373,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 25%;
-    height: 100px;
+    height: 75px;
     width: 100%;
     gap: 5px;
     overflow: hidden;

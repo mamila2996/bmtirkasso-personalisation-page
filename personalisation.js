@@ -47,13 +47,16 @@ colors.addEventListener("click", () => {
 cancelEditing.onclick = () => {
   afterClickDiv.style.display = "none";
   originalDiv.style.display = "block";
+  previewDiv.style.height ="80vh";
 };
 cancelEditingTextStyle.onclick = () => {
   afterClickTextStyle.style.display = "none";
   originalDiv.style.display = "block";
+  previewDiv.style.height ="80vh";
 };
 confirmEditing.onclick = () => {
   // match media
+
   if(x.matches){
     imageAndLogo.style.backgroundColor = "none";
    
@@ -63,8 +66,8 @@ confirmEditing.onclick = () => {
     imageAndLogo.style.color = "white";
     
   }
+  previewDiv.style.height ="80vh"; 
   
-
   afterClickDiv.style.display = "none";
   originalDiv.style.display = "block";
   //   imageAndLogo.style.backgroundColor ="#FF0A7C";
@@ -86,7 +89,7 @@ confirmEditingTextStyle.onclick = () => {
     textAndStyle.style.color = "white";
   }
   
-
+  previewDiv.style.height ="80vh"; 
   afterClickTextStyle.style.display = "none";
   originalDiv.style.display = "block";
   //   imageAndLogo.style.backgroundColor ="#FF0A7C";

@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mouse+Memoirs&family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&display=swap');
 *,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.header {
-  position: fixed;
-  left: 65px;
-  top: 15px;
 }
 .container-fluid {
   margin: 0;
@@ -16,14 +16,35 @@ body {
 }
 .main-section {
   height: 100vh;
-  background-color: #faf5ef;
+  background-color: #ffd2bb;;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  padding: 10px;
 }
+.header {
+text-align: center;
+}
+.save-button-container{
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  background-color: #ff0a7c;
+}
+.save-button-container .save-btn{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .main-section .wrapper {
   width: 100%;
-  margin: 20px;
 }
 /* text */
 .text-and-style {
@@ -148,7 +169,7 @@ body {
   width: 90%;
   height: 50px;
   border: 1px solid brown;
-  background-color: lightgray;
+  background-color: #faf5ef;
   border-radius: 5px;
 }
 .text-showcase .text-showcase-input input{
@@ -171,11 +192,32 @@ body {
 .overflow-btn {
   width: 100%;
   height: 150px;
-  background-color: #408ab4;
-  border: 1px solid black ;
+  background-color: #ffd2bb;
+  color: black;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  cursor: pointer;
+}
+#inter-font{
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+#mouse-font{
+font-family: 'Inter', sans-serif;
+}
+#lora-font{
+font-family: 'Lora', serif;
+
+}
+#bebas-font{
+  font-family: 'Bebas Neue', cursive;
+}
+#permanent-font{
+  font-family: 'Permanent Marker', cursive;
+}
+#black-ops-font{
+  font-family: 'Black Ops One', cursive;
 }
 /* colors */
 .after-click-colors {
@@ -334,6 +376,20 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
+
+::-webkit-scrollbar{
+  width: .4em;
+  height: .4rem;
+}
+::-webkit-scrollbar-track{
+  background: lightgrey;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#e4066e, gray);
+  border-radius: 100vw;
+}
 /* media  */
 @media screen and (max-width: 992px) {
   .header {
@@ -369,6 +425,9 @@ body {
     justify-content: flex-start;
     padding-top: 5px;
   }
+  .text-showcase-input{
+    margin-bottom: 7px;
+  }
   .font-choose{
     display: grid;
     grid-auto-flow: column;
@@ -383,20 +442,34 @@ body {
   }
   .overflow-btn{
     height: 100%;
-    padding: 5px;
+    text-align: center;
+  }
+  .overflow-btn h2{
+    font-size: 14px;
+  }
+  .overflow-btn h6{
+    font-size: 10px;
   }
   .main-section {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+  }
+  .image-input-and-buttons{
+    height: 25vh;
+  }
+  .text-showcase{
+    height: 35vh;
   }
   .preview-section {
-    height: 80vh;
+    height: 75vh;
   }
   .main-section .wrapper {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
-    margin: 0;
   }
   /* image and logo */
   .image-and-logo {
@@ -404,9 +477,9 @@ body {
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    height: 100px;
-    border: none;
+    height: 80px;
     margin: 5px;
+    border: none;
   }
   .image-and-logo .font-icon {
     margin: 0px;
@@ -423,7 +496,7 @@ body {
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    height: 100px;
+    height: 80px;
     border: none;
     margin: 5px;
   }
@@ -442,7 +515,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    height: 100px;
+    height: 80px;
     border: none;
     margin: 5px;
   }

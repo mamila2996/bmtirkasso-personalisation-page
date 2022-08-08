@@ -81,7 +81,7 @@ confirmEditingTextStyle.onclick = () => {
     textAndStyle.style.color = "white";
   }
 
-  previewDiv.style.height = "75vh";
+  previewDiv.style.height = "65vh";
   afterClickTextStyle.style.display = "none";
   originalDiv.style.display = "block";
 

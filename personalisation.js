@@ -30,12 +30,12 @@ var x = window.matchMedia("(max-width:992px)");
 imageAndLogo.addEventListener("click", () => {
   afterClickDiv.style.display = "block";
   originalDiv.style.display = "none";
-  previewDiv.style.height = "65vh";
+  previewDiv.style.height = "75vh";
 });
 textAndStyle.addEventListener("click", () => {
   afterClickTextStyle.style.display = "block";
   originalDiv.style.display = "none";
-  previewDiv.style.height = "55vh";
+  previewDiv.style.height = "65vh";
 });
 colors.addEventListener("click", () => {
   alert("this also checked");
@@ -43,12 +43,12 @@ colors.addEventListener("click", () => {
 cancelEditing.onclick = () => {
   afterClickDiv.style.display = "none";
   originalDiv.style.display = "block";
-  previewDiv.style.height = "65vh";
+  previewDiv.style.height = "75vh";
 };
 cancelEditingTextStyle.onclick = () => {
   afterClickTextStyle.style.display = "none";
   originalDiv.style.display = "block";
-  previewDiv.style.height = "65vh";
+  previewDiv.style.height = "75vh";
 };
 confirmEditing.onclick = () => {
   // match media
@@ -59,7 +59,7 @@ confirmEditing.onclick = () => {
     imageAndLogo.style.backgroundColor = "#FF0A7C";
     imageAndLogo.style.color = "white";
   }
-  previewDiv.style.height = "65vh";
+  previewDiv.style.height = "75vh";
 
   afterClickDiv.style.display = "none";
   originalDiv.style.display = "block";
@@ -81,7 +81,7 @@ confirmEditingTextStyle.onclick = () => {
     textAndStyle.style.color = "white";
   }
 
-  previewDiv.style.height = "65vh";
+  previewDiv.style.height = "75vh";
   afterClickTextStyle.style.display = "none";
   originalDiv.style.display = "block";
 

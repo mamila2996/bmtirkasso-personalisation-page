@@ -454,18 +454,18 @@ font-family: 'Lora', serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 20vh;
+    height: 25vh;
     margin: 0;
     padding: 0 10px;
   }
   .image-input-and-buttons{
-    height: 25vh;
+    height: 35vh;
   }
   .text-showcase{
-    height: 30vh;
+    height: 35vh;
   }
   .preview-section {
-    height: 65vh;
+    height: 75vh;
   }
   .main-section .wrapper {
     display: flex;

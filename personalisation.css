@@ -454,7 +454,7 @@ font-family: 'Lora', serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 25vh;
+    height: 20vh;
     margin: 0;
     padding: 0 10px;
   }
@@ -462,10 +462,10 @@ font-family: 'Lora', serif;
     height: 25vh;
   }
   .text-showcase{
-    height: 35vh;
+    height: 30vh;
   }
   .preview-section {
-    height: 75vh;
+    height: 65vh;
   }
   .main-section .wrapper {
     display: flex;

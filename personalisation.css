@@ -370,7 +370,7 @@ font-family: 'Lora', serif;
 }
 
 .close-btn {
-  position: fixed;
+  position: absolute;
   right: 25px;
   top: 15px;
   font-size: 30px;

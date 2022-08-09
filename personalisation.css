@@ -3,28 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Mouse+Memoirs&family=Oleo+Script+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
-  height: 100%;
-  margin: 0;
+html{
+  height: -webkit-fill-available;
+}
+body{
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+max-width: 1440px;
+height: 100vh;
+height: -webkit-fill-available;
 }
 .container-fluid {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
 }
 .main-section {
-  height: 100%;
+  height: 100vh;
   background-color: #ffd2bb;;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
 }
 .header {
 text-align: center;
@@ -359,7 +366,7 @@ font-family: 'Lora', serif;
 
 /* preview section */
 .preview-section {
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,18 +464,18 @@ font-family: 'Lora', serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 25%;
+    height: 25vh;
     margin: 0;
     padding: 0 10px;
   }
   .image-input-and-buttons{
-    height: 35%;
+    height: 35vh;
   }
   .text-showcase{
-    height: 35%;
+    height: 35vh;
   }
   .preview-section {
-    height: 75%;
+    height: 75vh;
   }
   .main-section .wrapper {
     display: flex;

@@ -3,16 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Mouse+Memoirs&family=Oleo+Script+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 0;
 }
 body{
-
- min-height: 100vh;
-
+  height: calc(100%);
 }
 .container-fluid {
   margin: 0;
@@ -20,7 +17,7 @@ body{
   box-sizing: border-box;
 }
 .main-section {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #ffd2bb;;
   display: flex;
   justify-content: space-between;
@@ -361,7 +358,7 @@ font-family: 'Lora', serif;
 
 /* preview section */
 .preview-section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,18 +456,18 @@ font-family: 'Lora', serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: 25vh;
+    height: 25vh;
     margin: 0;
     padding: 0 10px;
   }
   .image-input-and-buttons{
-    min-height: 35vh;
+    height: 35vh;
   }
   .text-showcase{
-    min-height: 35vh;
+    height: 35vh;
   }
   .preview-section {
-    min-height: 75vh;
+    height: 75vh;
   }
   .main-section .wrapper {
     display: flex;

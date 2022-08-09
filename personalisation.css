@@ -3,11 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Mouse+Memoirs&family=Oleo+Script+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&display=swap');
-*,
-body {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100vh;
 }
 .container-fluid {
   margin: 0;

@@ -7,15 +7,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
+}
+html {
+  height: -webkit-fill-available;
 }
 body{
-min-height: 100vh;
+  height: -webkit-fill-available;
 }
 .container-fluid {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  height: -webkit-fill-available;
 }
+/* 
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+
+  height: -webkit-fill-available;
+}
+
+ and the important part that also your container should be like this: 
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  height: -webkit-fill-available;
+}
+
+*/
 
 .main-section {
   height: 100vh;

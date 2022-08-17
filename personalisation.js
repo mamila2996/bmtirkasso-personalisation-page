@@ -90,3 +90,12 @@ confirmEditingTextStyle.onclick = () => {
   fontIconContainerText.style.border = "2px solid white";
   fontIconContainerText.style.backgroundColor = "#FFC0CB";
 };
+
+let innerwidth = innerWidth;
+let innerheight = innerHeight;
+let clientwidth = document.body.clientWidth;
+let clientheight = document.body.clientHeight;
+console.log("innerwidth = " + innerwidth);
+console.log("clientwidth = " + clientwidth);
+console.log("innerheigth = " + innerheight);
+console.log("clientheigth = " + clientheight);

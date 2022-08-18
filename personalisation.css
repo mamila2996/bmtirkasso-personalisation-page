@@ -11,9 +11,11 @@
 }
 html {
   height: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 body{
   height: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 .container-fluid {
   margin: 0;
@@ -23,27 +25,9 @@ body{
   width: 100vw;
   position: relative;
   height: -webkit-fill-available;
-}
-/* 
-html {
-  height: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
-body {
-
-  height: -webkit-fill-available;
-}
-
- and the important part that also your container should be like this: 
-
-.container{
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  height: -webkit-fill-available;
-}
-
-*/
 
 .main-section {
   height: 100vh;
@@ -415,7 +399,7 @@ font-family: 'Lora', serif;
 
 .colors-showcase{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   color: #e4066e;
@@ -434,6 +418,7 @@ font-family: 'Lora', serif;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .first-row-colors .color-choose-btn{
 width: 45px;
@@ -502,6 +487,9 @@ outline: none;
 /* preview section */
 .preview-section {
   height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -515,9 +503,23 @@ outline: none;
 }
 
 
+.container-for-draggale-element{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: none;
+  border: 2px dashed #408ab4;
+}
+
 .preview-text-show{
-  font-size: 25px;
+ 
+}
+#preview-text-show{
+  font-size: 30px;
   font-weight: bold;
+}
+.draggable{
+  cursor: move;
 }
 .close-btn {
   position: absolute;
@@ -612,17 +614,33 @@ outline: none;
   .colors-showcase .color-row-container{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 50%;
-    height: 75px;
+    grid-auto-columns: 75%;
+    height: 100px;
     width: 100%;
-    gap: 20px;
+    gap: 10px;
     overflow: hidden;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     padding: 5px;
   }
+  .first-row-colors{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+  }
+  .first-row-colors .color-choose-btn{
+    height: 35px;
+    width:  35px;
+  }
   .preview-section {
     height: 75vh;
+    width: 100%;
+  }
+  .container-for-draggale-element{
+    width: 250px;
+    height: 250px;
+    border: 2px dashed #408ab4;
   }
   .main-section .wrapper {
     display: flex;
@@ -675,4 +693,8 @@ outline: none;
   .colors .text span {
     font-size: 0.6rem;
   }
+  .save-button-container{
+    background-color: #FFC0CB;
+  }
+  
 }

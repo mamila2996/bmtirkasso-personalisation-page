@@ -18,7 +18,7 @@ const cancelEditingTextStyle = document.querySelector(
   ".cancel-editing-text-style",
 );
 const imageIcon = document.querySelector(".bi-image");
-const previewTextShow = document.querySelector(".preview-text-show");
+const previewTextShow = document.querySelector("#preview-text-show");
 const fontIconTextStyle = document.querySelector(".bi-fonts");
 const fontIconColor = document.querySelector(".bi-palette");
 const okIcon = document.getElementById("bi-1");

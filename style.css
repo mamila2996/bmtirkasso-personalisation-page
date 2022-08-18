@@ -12,30 +12,50 @@ body{
     object-fit: contain;
 }
 .name-container{
-    font-size: larger;
+    font-size: 1.5vw;
     text-align: center;
     padding: 7px;
 }
 .price-container{
-    font-size: large;
+    font-size: 1.5vw;
     color: #0D6EFD;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 }
+.content-container{
+
+}
+
 .btn-container{
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-container a{
-font-size: small;
-width: 140px;
-padding: 7px;
-margin: 7px;
+font-size: 0.8vw;
+width: 50%;
+}
+.contact{
+    height: 300px;
+}
+@media (max-width: 576px) { 
+    .btn-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-container a{
+        font-size: 1.5vw;
+        width: 100%;
+        }
+    
 }
 
 /* footer section */
 
-.contact{
-    height: 300px;
-}

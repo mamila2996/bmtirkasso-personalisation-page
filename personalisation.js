@@ -134,12 +134,13 @@ colors.addEventListener("click", () => {
 cancelEditingTextStyle.onclick = () => {
   afterClickTextStyle.style.display = "none";
   originalDiv.style.display = "block";
-
+  previewTextShow.style.fontFamily = "sans-serif";
 };
 
 cancelEditingColors.onclick = () =>{
   afterClickColors.style.display = "none";
   originalDiv.style.display = "block";
+  previewTextShow.style.color ="black";
 }
 
 confirmEditingTextStyle.onclick = () => {

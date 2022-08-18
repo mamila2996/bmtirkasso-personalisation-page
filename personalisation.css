@@ -507,7 +507,6 @@ outline: none;
   position: absolute;
   width: 250px;
   height: 250px;
-  background: none;
   border: 2px dashed #408ab4;
 }
 
@@ -637,11 +636,7 @@ outline: none;
     height: 75vh;
     width: 100%;
   }
-  .container-for-draggale-element{
-    width: 250px;
-    height: 250px;
-    border: 2px dashed #408ab4;
-  }
+ 
   .main-section .wrapper {
     display: flex;
     justify-content: space-between;

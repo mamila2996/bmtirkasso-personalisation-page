@@ -605,7 +605,14 @@ outline: none;
   }
   .text-showcase{
     height: 25vh;
-   
+    padding: 10px 15px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 5px;
+  }
+  .text-showcase .font-choose{
+    height: 75%;
   }
   .colors-showcase{
     height: 25vh;  
